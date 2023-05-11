@@ -1,0 +1,12 @@
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-details{
+    color: var(--clr-slate400);
+    font-size: var(--size-lg);
+    line-height: 5rem;
+}

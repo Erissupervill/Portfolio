@@ -1,0 +1,114 @@
+.skills-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:10px;
+    place-items: center;
+}
+
+.skills-container .text{
+    color:var(--clr-slate400);
+    font-weight: 800;
+    font-size: var(--size-s);
+}
+
+.circular-progress{
+    height:250px;
+    width:100%;
+    border-radius: 50%;
+    background-color: conic-gradient(#7d2ea8 3.6deg, #ededed 0deg);
+}
+
+.container-progress{
+    display: flex;
+    width:100%;
+    padding:50px 0;
+    border-radius: 8px;
+    background: var(--clr-blind);
+    box-shadow: 0 10px 54px rgba(151,110,247,0.5);;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-skills{
+    display: flex;
+    width:420px;
+    padding:50px 0;
+    border-radius: 8px;
+    background-color: var(--clr-slate400);
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress{
+    position: relative;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-progress::before{
+    content:"";
+    position: absolute;
+    height:130px;
+    width:130px;
+    background-color: #000;
+    border-radius: 50%;
+
+}
+
+.progress-value{
+    position: relative;
+    color:#fff;
+    font-size:var(--size-3xl);
+    font-weight: 600;
+}
+
+
+
+/* md */
+@media(min-width:768px) {
+    .skills-container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .skills-container .text{
+        font-size: var(--size-lg);
+    }
+}
+
+
+/* lg */
+@media(min-width:1024px){
+
+    .skills-container .text{
+        font-size: var(--size-xl);
+    }
+}
+/* xl */
+@media(min-width:1280px){
+    .skills-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .skills-container .text{
+        font-size: var(--size-2xl);
+    }
+
+}
+/* 2xl */
+@media(min-width:1536px){
+    .skills-container{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .skills-container .text{
+        font-size: var(--size-3xl);
+    }
+
+}
